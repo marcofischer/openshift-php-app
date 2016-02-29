@@ -1,0 +1,15 @@
+{
+  "name": "marcofischer/openshift-php-app",
+  "description": "Openshift PHP App",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Marco Fischer",
+      "email": "mfischer@meeyulabs.de"
+    }
+  ],
+  "require": {
+    "silex/silex": "^1.3"
+  }
+}

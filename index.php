@@ -1,11 +1,4 @@
 <?php
 
-echo "<h1>Environment</h1>";
-echo '<ul>';
+require "vendor/autoload.php";
 
-foreach ($_SERVER as $k => $v)
-{
-  echo '<li><b>' . $k . ':</b> ' . $v . '</li>';
-}
-
-echo '</ul>';
