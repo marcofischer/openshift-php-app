@@ -6,9 +6,9 @@ $app = new Silex\Application();
 
 $app->get('/', function() use($app) {
     return '<h1>Hello OpenShift!</h1><pre>' .
-           'Running image ' . getenv('OPENSHIFT_BUILD_NAME') . '<br>' .
+           'Running build ' . getenv('OPENSHIFT_BUILD_NAME') . '<br>' .
            'on Container ' . getenv('HOSTNAME') . '<br>' .
-           'git repo ' . getenv('OPENSHIFT_BUILD_SOURCE') .
+           'git rev ' . getenv('OPENSHIFT_BUILD_COMMIT') .
            '</pre>';
 });
 
